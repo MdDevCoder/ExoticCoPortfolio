@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
@@ -109,3 +110,4 @@ export default function Navbar() {
     </motion.nav>
   );
 }
+

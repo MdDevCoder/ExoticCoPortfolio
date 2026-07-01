@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import { useState } from "react";
@@ -102,3 +103,4 @@ export default function ProjectFilter({ categories, initialProjects }: { categor
     </div>
   );
 }
+

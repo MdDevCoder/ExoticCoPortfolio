@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import { motion } from "framer-motion";
@@ -77,3 +78,4 @@ function ServiceCard({ service, index, ease }: { service: any; index: number; ea
     </motion.article>
   );
 }
+

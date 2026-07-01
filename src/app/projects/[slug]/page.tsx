@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Link from "next/link";

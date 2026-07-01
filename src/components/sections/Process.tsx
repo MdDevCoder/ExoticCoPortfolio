@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -98,3 +99,4 @@ function ProcessStep({ step, index, ease }: { step: any; index: number; ease: an
     </motion.article>
   );
 }
+

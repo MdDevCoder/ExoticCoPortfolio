@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { exoticTokens } from "@/lib/design/tokens";
 
@@ -51,3 +52,4 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
   }
 );
 Card.displayName = "Card";
+

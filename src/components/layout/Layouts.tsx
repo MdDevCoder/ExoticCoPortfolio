@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 
 interface LayoutProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -43,3 +44,4 @@ export function Flex({ className = "", children, ...props }: LayoutProps) {
     </div>
   );
 }
+

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 
 interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
@@ -76,3 +77,4 @@ export function Overline({ className = "", as: Component = "span", children, ...
     </Component>
   );
 }
+

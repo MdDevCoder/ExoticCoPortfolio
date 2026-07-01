@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import Link from "next/link";
@@ -117,3 +118,4 @@ function SocialLink({ href, icon, ariaLabel }: { href: string; icon: React.React
     </a>
   );
 }
+

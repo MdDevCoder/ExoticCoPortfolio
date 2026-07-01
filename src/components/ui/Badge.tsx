@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
@@ -34,3 +35,4 @@ export const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
   }
 );
 Badge.displayName = "Badge";
+

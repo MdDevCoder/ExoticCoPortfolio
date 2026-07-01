@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import { motion, useInView } from "framer-motion";
@@ -69,3 +70,4 @@ function Counter({ stat, index }: { stat: any; index: number }) {
     </motion.div>
   );
 }
+

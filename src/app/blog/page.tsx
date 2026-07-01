@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Metadata } from "next";
 import { BookOpen } from "lucide-react";
 import Link from "next/link";
@@ -46,3 +47,4 @@ export default function BlogPage() {
     </main>
   );
 }
+

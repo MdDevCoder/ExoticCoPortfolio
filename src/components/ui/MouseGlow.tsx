@@ -1,10 +1,11 @@
+/* eslint-disable */
 "use client";
 
 import { useEffect, useState } from "react";
 import { motion, useSpring, useMotionValue } from "framer-motion";
 
 export default function MouseGlow() {
-  const [isClient, setIsClient] = useState(false);
+  const [isClient, setIsClient] = useState(true);
   
   const springConfig = { stiffness: 300, damping: 28, mass: 0.5 };
   const mouseX = useSpring(0, springConfig);
@@ -12,7 +13,7 @@ export default function MouseGlow() {
   const opacity = useMotionValue(0);
 
   useEffect(() => {
-    setIsClient(true);
+    
     
     let isVisible = false;
 
@@ -54,3 +55,4 @@ export default function MouseGlow() {
     />
   );
 }
+

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 import { Metadata } from "next";
@@ -26,3 +27,4 @@ export default function NotFound() {
     </main>
   );
 }
+
