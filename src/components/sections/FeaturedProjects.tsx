@@ -92,6 +92,7 @@ export default function FeaturedProjects() {
                 <motion.div 
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  style={{ willChange: "transform", transform: "translateZ(0)" }}
                   className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-3xl border border-white/10 shadow-[0_0_60px_rgba(45,140,255,0.4)] overflow-hidden mt-8 lg:mt-0"
                 >
                    {/* Light reflection */}
@@ -217,6 +218,7 @@ export default function FeaturedProjects() {
                   <motion.div 
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ willChange: "transform", transform: "translateZ(0)" }}
                     className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-3xl border border-white/10 shadow-[0_0_60px_rgba(168,85,247,0.4)] overflow-hidden"
                   >
                      {/* Light reflection */}

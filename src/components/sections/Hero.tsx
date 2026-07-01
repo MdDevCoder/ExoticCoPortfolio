@@ -54,6 +54,7 @@ export default function Hero() {
             scale: [1, 1.1, 1],
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}
           className="absolute left-[15%] top-[20%] h-[400px] w-[400px] rounded-full bg-primary/20 blur-[150px]" 
         />
         <motion.div 
@@ -62,6 +63,7 @@ export default function Hero() {
             scale: [1, 1.2, 1],
           }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}
           className="absolute right-[15%] top-[40%] h-[500px] w-[500px] rounded-full bg-glow/15 blur-[180px]" 
         />
         
