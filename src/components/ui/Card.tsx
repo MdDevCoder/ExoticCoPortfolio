@@ -17,7 +17,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
 
     const variants = {
       surface: "bg-surface border border-white/5",
-      glass: "bg-surface/30 border border-white/5 backdrop-blur-xl",
+      glass: "bg-surface/30 border border-white/5 backdrop-blur-md",
       outline: "bg-transparent border border-white/10"
     };
 

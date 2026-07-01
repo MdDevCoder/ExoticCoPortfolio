@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#020305] pt-24 pb-12 border-t border-white/5 overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute left-1/2 top-0 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px] pointer-events-none" />
+      <div className="absolute left-1/2 top-0 h-[600px] w-[1200px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(45,140,255,0.08)_0%,transparent_60%)] pointer-events-none" />
 
       <div className="container relative z-10 mx-auto px-6 lg:px-12">
         <div className="grid gap-16 lg:grid-cols-12 lg:gap-8 pb-20 border-b border-white/10">

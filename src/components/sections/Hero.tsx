@@ -55,7 +55,7 @@ export default function Hero() {
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}
-          className="absolute left-[15%] top-[20%] h-[400px] w-[400px] rounded-full bg-primary/20 blur-[150px]" 
+          className="absolute left-[15%] top-[20%] h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(45,140,255,0.15)_0%,transparent_60%)]" 
         />
         <motion.div 
           animate={{ 
@@ -64,7 +64,7 @@ export default function Hero() {
           }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}
-          className="absolute right-[15%] top-[40%] h-[500px] w-[500px] rounded-full bg-glow/15 blur-[180px]" 
+          className="absolute right-[15%] top-[40%] h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(86,168,255,0.1)_0%,transparent_60%)]" 
         />
         
         {/* Particles / Stars Overlay */}
@@ -78,7 +78,7 @@ export default function Hero() {
         animate="visible"
         className="container relative z-10 mx-auto px-6 text-center lg:px-12"
       >
-        <motion.div variants={itemVariants} className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 backdrop-blur-xl shadow-[0_0_20px_rgba(255,255,255,0.02)] transition-all hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] cursor-default">
+        <motion.div variants={itemVariants} className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 backdrop-blur-md shadow-[0_0_20px_rgba(255,255,255,0.02)] transition-all hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] cursor-default">
           <Sparkles size={16} className="text-primary animate-pulse" />
           <span className="text-sm font-medium tracking-wide text-white">Award-Winning Engineering Studio</span>
         </motion.div>

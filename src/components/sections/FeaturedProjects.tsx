@@ -41,7 +41,7 @@ export default function FeaturedProjects() {
   return (
     <section id="projects" className="relative bg-background pt-32 pb-40">
       {/* Subtle background glows */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-[radial-gradient(circle_at_center,rgba(45,140,255,0.05)_0%,transparent_60%)] pointer-events-none" />
       
       <div className="container relative z-10 mx-auto px-6 lg:px-12">
         <header className="mx-auto mb-24 text-center md:max-w-4xl">
@@ -69,7 +69,7 @@ export default function FeaturedProjects() {
             CRYPTIQVERSE FLAGSHIP SHOWCASE
             ========================================= */}
         <div className="mb-40">
-          <article className="group relative overflow-hidden rounded-[2.5rem] bg-surface/40 border border-white/5 backdrop-blur-3xl shadow-[0_30px_100px_-20px_rgba(0,0,0,0.8)]">
+          <article className="group relative overflow-hidden rounded-[2.5rem] bg-surface/40 border border-white/5 backdrop-blur-md shadow-[0_30px_100px_-20px_rgba(0,0,0,0.8)]">
             
             {/* 1. Hero with Integrated Logo */}
             <div className="relative w-full overflow-hidden p-10 lg:p-24 bg-gradient-to-br from-surface to-[#050B14]">
@@ -77,7 +77,7 @@ export default function FeaturedProjects() {
               
               <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
                 <div className="flex-1">
-                  <div className="mb-8 inline-flex items-center gap-3 rounded-full bg-primary/10 px-5 py-2 backdrop-blur-xl border border-primary/20 shadow-[0_0_30px_rgba(45,140,255,0.2)]">
+                  <div className="mb-8 inline-flex items-center gap-3 rounded-full bg-primary/10 px-5 py-2 backdrop-blur-md border border-primary/20 shadow-[0_0_30px_rgba(45,140,255,0.2)]">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-glow"></span>
@@ -93,7 +93,7 @@ export default function FeaturedProjects() {
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                   style={{ willChange: "transform", transform: "translateZ(0)" }}
-                  className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-3xl border border-white/10 shadow-[0_0_60px_rgba(45,140,255,0.4)] overflow-hidden mt-8 lg:mt-0"
+                  className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-[0_0_60px_rgba(45,140,255,0.4)] overflow-hidden mt-8 lg:mt-0"
                 >
                    {/* Light reflection */}
                    <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />
@@ -219,7 +219,7 @@ export default function FeaturedProjects() {
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     style={{ willChange: "transform", transform: "translateZ(0)" }}
-                    className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-3xl border border-white/10 shadow-[0_0_60px_rgba(168,85,247,0.4)] overflow-hidden"
+                    className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-[0_0_60px_rgba(168,85,247,0.4)] overflow-hidden"
                   >
                      {/* Light reflection */}
                      <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />

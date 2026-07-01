@@ -86,7 +86,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             {/* Logo Badge */}
             {project.branding && (
               <ClientMotionDiv 
-                className={`hidden lg:flex relative items-center justify-center w-[140px] h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-3xl border border-white/10 ${shadowColor} overflow-hidden`}
+                className={`hidden lg:flex relative items-center justify-center w-[140px] h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 ${shadowColor} overflow-hidden`}
               >
                  <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />
                  <div className={`absolute inset-0 ${glowColor} blur-2xl rounded-full z-0`} />

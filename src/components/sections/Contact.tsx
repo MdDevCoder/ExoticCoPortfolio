@@ -85,7 +85,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.2, ease: easePremium }}
           >
-            <div className="relative rounded-[2.5rem] bg-surface/60 border border-white/10 p-8 sm:p-10 backdrop-blur-2xl shadow-[0_30px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden">
+            <div className="relative rounded-[2.5rem] bg-surface/60 border border-white/10 p-8 sm:p-10 backdrop-blur-md shadow-[0_30px_100px_-20px_rgba(0,0,0,0.7)] overflow-hidden">
               <AnimatePresence mode="wait">
                 {!submitted ? (
                   <motion.form 

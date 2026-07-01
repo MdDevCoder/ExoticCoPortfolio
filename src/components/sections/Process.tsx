@@ -87,7 +87,7 @@ function ProcessStep({ step, index, ease }: { step: any; index: number; ease: an
 
       {/* Content */}
       <div className={`ml-28 flex-1 md:ml-0 ${isEven ? "md:mr-32 md:text-right" : "md:ml-32"}`}>
-        <div className="group rounded-[2rem] bg-surface/30 border border-white/5 p-8 lg:p-10 backdrop-blur-xl transition-all duration-500 hover:bg-surface/70 hover:border-primary/30 hover:shadow-[0_20px_40px_-15px_rgba(45,140,255,0.1)]">
+        <div className="group rounded-[2rem] bg-surface/30 border border-white/5 p-8 lg:p-10 backdrop-blur-md transition-all duration-500 hover:bg-surface/70 hover:border-primary/30 hover:shadow-[0_20px_40px_-15px_rgba(45,140,255,0.1)]">
           <h3 className="mb-4 text-2xl font-bold text-white tracking-tight flex items-center gap-4 ${isEven ? 'md:justify-end' : ''}">
             <span className="text-primary text-sm font-mono tracking-widest">{`0${index + 1}.`}</span>
             {step.title}
