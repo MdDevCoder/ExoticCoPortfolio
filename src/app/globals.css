@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050608;
+  --color-surface: #0B0F19;
+  --color-primary: #2D8CFF;
+  --color-glow: #56A8FF;
+  --color-foreground: #FFFFFF;
+  --color-secondary-text: #B8C1D1;
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #050608;
+  --foreground: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #2D8CFF;
+  color: #FFFFFF;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050608;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2D8CFF;
+}
+
+/* Utility classes for glow */
+@utility text-glow {
+  text-shadow: 0 0 10px rgba(86, 168, 255, 0.5);
+}
+
+@utility box-glow {
+  box-shadow: 0 0 20px rgba(45, 140, 255, 0.2);
+}
+
+@utility glass {
+  background: rgba(11, 15, 25, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
