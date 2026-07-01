@@ -1,5 +1,5 @@
-/* eslint-disable */
 "use client";
+/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { ArrowUpRight, Layers, Lock, Globe, Zap, Server } from "lucide-react";

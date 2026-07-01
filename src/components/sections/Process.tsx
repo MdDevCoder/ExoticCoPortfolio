@@ -1,5 +1,5 @@
-/* eslint-disable */
 "use client";
+/* eslint-disable */
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Search, Lightbulb, PenTool, Code, CheckCircle, Rocket, HeartHandshake } from "lucide-react";

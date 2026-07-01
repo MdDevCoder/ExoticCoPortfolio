@@ -1,5 +1,5 @@
-/* eslint-disable */
 "use client";
+/* eslint-disable */
 
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState, useEffect } from "react";

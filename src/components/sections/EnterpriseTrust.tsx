@@ -1,5 +1,5 @@
-/* eslint-disable */
 "use client";
+/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { Shield, Server, Code, Zap, RefreshCw, Handshake } from "lucide-react";

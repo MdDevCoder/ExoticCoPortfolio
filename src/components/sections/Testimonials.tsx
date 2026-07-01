@@ -1,5 +1,5 @@
-/* eslint-disable */
 "use client";
+/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";

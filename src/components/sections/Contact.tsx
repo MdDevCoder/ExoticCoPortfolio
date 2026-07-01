@@ -1,5 +1,5 @@
-/* eslint-disable */
 "use client";
+/* eslint-disable */
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Mail, MapPin, CheckCircle } from "lucide-react";
