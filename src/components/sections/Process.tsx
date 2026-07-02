@@ -78,7 +78,7 @@ function ProcessStep({ step, index, ease }: { step: { title: string; description
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, ease }}
-      className="relative grid grid-cols-1 gap-6 md:grid-cols-[1fr_100px_1fr] lg:grid-cols-[1fr_120px_1fr] md:items-center"
+      className="relative grid grid-cols-1 gap-6 md:grid-cols-[1fr_120px_1fr] md:items-center"
     >
       {/* Node / Icon Column */}
       <div className="flex justify-start md:justify-center md:col-start-2 md:row-start-1 relative z-10">
@@ -88,13 +88,13 @@ function ProcessStep({ step, index, ease }: { step: { title: string; description
       </div>
 
       {/* Text Column */}
-      <div className={`md:row-start-1 ${isEven ? "md:col-start-1 md:text-right md:pr-4 lg:pr-8" : "md:col-start-3 md:text-left md:pl-4 lg:pl-8"} pl-[5.5rem] md:pl-0`}>
+      <div className={`md:row-start-1 ${isEven ? "md:col-start-1 md:text-right" : "md:col-start-3 md:text-left"} pl-[5.5rem] md:pl-0`}>
         <div className="group rounded-[2rem] bg-surface/30 border border-white/5 p-8 lg:p-10 backdrop-blur-xl transition-all duration-500 hover:bg-surface/70 hover:border-primary/30 hover:shadow-[0_20px_40px_-15px_rgba(45,140,255,0.1)]">
           <h3 className={`mb-4 text-2xl font-bold text-white tracking-tight flex flex-col md:flex-row md:items-center gap-3 ${isEven ? 'md:justify-end' : ''}`}>
             <span className="text-primary text-sm font-mono tracking-widest">{`0${index + 1}.`}</span>
             {step.title}
           </h3>
-          <p className="text-lg text-secondary-text font-light leading-relaxed">{step.description}</p>
+          <p className={`text-lg text-secondary-text font-light leading-relaxed max-w-[65ch] ${isEven ? 'ml-auto' : ''}`}>{step.description}</p>
         </div>
       </div>
     </motion.article>
