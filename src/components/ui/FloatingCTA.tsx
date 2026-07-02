@@ -33,7 +33,7 @@ export default function FloatingCTA() {
         >
           <Link
             href="/contact"
-            className="group relative flex items-center gap-4 overflow-hidden rounded-full bg-surface/80 p-2 pr-6 backdrop-blur-md border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 hover:bg-surface hover:border-primary/50"
+            className="group relative flex items-center gap-4 overflow-hidden rounded-full bg-surface/80 p-2 pr-6 backdrop-blur-xl border border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 hover:bg-surface hover:border-primary/50"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-[0_0_20px_rgba(45,140,255,0.4)] transition-transform duration-500 group-hover:scale-105 group-hover:bg-glow">
               <MessageSquare size={20} />

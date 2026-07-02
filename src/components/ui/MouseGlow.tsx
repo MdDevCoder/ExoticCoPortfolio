@@ -50,7 +50,7 @@ export default function MouseGlow() {
         willChange: "transform, opacity",
         translateZ: 0
       }}
-      className="pointer-events-none fixed left-0 top-0 z-[9999] h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle_at_center,rgba(86,168,255,0.06)_0%,transparent_60%)] transition-opacity duration-500"
+      className="pointer-events-none fixed left-0 top-0 z-[9999] h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle_at_center,rgba(86,168,255,0.08)_0%,transparent_60%)] mix-blend-screen transition-opacity duration-500"
     />
   );
 }

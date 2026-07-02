@@ -63,7 +63,7 @@ export default function ProjectFilter({ categories, initialProjects }: { categor
                         <motion.div 
                           animate={{ y: [0, -5, 0] }}
                           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                          className={`relative flex items-center justify-center w-[90px] h-[90px] md:w-[100px] md:h-[100px] rounded-full p-1.5 bg-white/[0.03] backdrop-blur-md border border-white/10 overflow-hidden ${project.branding.color === 'purple' ? 'shadow-[0_0_30px_rgba(168,85,247,0.3)]' : 'shadow-[0_0_30px_rgba(45,140,255,0.3)]'}`}
+                          className={`relative flex items-center justify-center w-[90px] h-[90px] md:w-[100px] md:h-[100px] rounded-full p-1.5 bg-white/[0.03] backdrop-blur-3xl border border-white/10 overflow-hidden ${project.branding.color === 'purple' ? 'shadow-[0_0_30px_rgba(168,85,247,0.3)]' : 'shadow-[0_0_30px_rgba(45,140,255,0.3)]'}`}
                         >
                            <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />
                            <div className={`absolute inset-0 blur-xl rounded-full z-0 ${project.branding.color === 'purple' ? 'bg-purple-500/20' : 'bg-primary/20'}`} />
