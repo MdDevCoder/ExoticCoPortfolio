@@ -78,17 +78,19 @@ function ProcessStep({ step, index, ease }: { step: { title: string; description
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, ease }}
-      className={`relative flex flex-col gap-8 md:flex-row md:items-center ${isEven ? "md:flex-row-reverse" : ""}`}
+      className="relative grid grid-cols-1 gap-6 md:grid-cols-[1fr_100px_1fr] lg:grid-cols-[1fr_120px_1fr] md:items-center"
     >
-      {/* Node / Icon */}
-      <div className="absolute left-0 z-10 flex h-20 w-20 items-center justify-center rounded-full bg-[#050608] border-2 border-primary/30 text-primary shadow-[0_0_30px_rgba(45,140,255,0.2)] md:left-1/2 md:-translate-x-1/2 transition-all duration-500 hover:scale-110 hover:bg-primary hover:text-white hover:border-primary hover:shadow-[0_0_40px_rgba(45,140,255,0.6)] cursor-default">
-        {step.icon}
+      {/* Node / Icon Column */}
+      <div className="flex justify-start md:justify-center md:col-start-2 md:row-start-1 relative z-10">
+        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#050608] border-2 border-primary/30 text-primary shadow-[0_0_30px_rgba(45,140,255,0.2)] transition-all duration-500 hover:scale-110 hover:bg-primary hover:text-white hover:border-primary hover:shadow-[0_0_40px_rgba(45,140,255,0.6)] cursor-default shrink-0">
+          {step.icon}
+        </div>
       </div>
 
-      {/* Content */}
-      <div className={`ml-28 flex-1 md:ml-0 ${isEven ? "md:mr-32 md:text-right" : "md:ml-32"}`}>
+      {/* Text Column */}
+      <div className={`md:row-start-1 ${isEven ? "md:col-start-1 md:text-right md:pr-4 lg:pr-8" : "md:col-start-3 md:text-left md:pl-4 lg:pl-8"} pl-[5.5rem] md:pl-0`}>
         <div className="group rounded-[2rem] bg-surface/30 border border-white/5 p-8 lg:p-10 backdrop-blur-xl transition-all duration-500 hover:bg-surface/70 hover:border-primary/30 hover:shadow-[0_20px_40px_-15px_rgba(45,140,255,0.1)]">
-          <h3 className="mb-4 text-2xl font-bold text-white tracking-tight flex items-center gap-4 ${isEven ? 'md:justify-end' : ''}">
+          <h3 className={`mb-4 text-2xl font-bold text-white tracking-tight flex flex-col md:flex-row md:items-center gap-3 ${isEven ? 'md:justify-end' : ''}`}>
             <span className="text-primary text-sm font-mono tracking-widest">{`0${index + 1}.`}</span>
             {step.title}
           </h3>
