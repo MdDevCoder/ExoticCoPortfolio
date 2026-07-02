@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Contact from "@/components/sections/Contact";
 import { Metadata } from "next";
 

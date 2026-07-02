@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,15 +6,17 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-export default function ProjectFilter({ categories, initialProjects }: { categories: string[], initialProjects: any[] }) {
+type Project = { id: string | number; slug: string; title: string; description: string; category: string; isFlagship?: boolean; branding?: { logo: string; alt: string; color: string; }; techStack?: string[]; };
+
+export default function ProjectFilter({ categories, initialProjects }: { categories: string[], initialProjects: Project[] }) {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects = activeCategory === "All" 
     ? initialProjects 
     : initialProjects.filter(p => p.category === activeCategory);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const easePremium = [0.16, 1, 0.3, 1] as any // eslint-disable-line @typescript-eslint/no-explicit-any
+  
+  const easePremium = [0.16, 1, 0.3, 1] as [number, number, number, number];
 
   return (
     <div>

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 import { Metadata } from "next";
 import { Container, Section, Grid, Stack, Flex } from "@/components/layout/Layouts";

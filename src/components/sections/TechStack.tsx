@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion } from "framer-motion";
 
@@ -27,7 +26,7 @@ const categories = [
 ];
 
 export default function TechStack() {
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <section className="relative bg-background pt-32 pb-40 border-t border-white/5">

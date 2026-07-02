@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Mail, MapPin, CheckCircle } from "lucide-react";
@@ -13,7 +12,7 @@ const budgetOptions = ["<$10k", "$10k - $50k", "$50k - $100k", "$100k+"];
 const timelineOptions = ["< 1 Month", "1-3 Months", "3-6 Months", "6+ Months"];
 
 export default function Contact() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  
   const easePremium = [0.16, 1, 0.3, 1] as any // eslint-disable-line @typescript-eslint/no-explicit-any
   const [formState, setFormState] = useState({
     name: "", email: "", services: [] as string[], budget: "", timeline: "", message: ""

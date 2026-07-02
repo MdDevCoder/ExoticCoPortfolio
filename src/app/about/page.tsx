@@ -1,4 +1,3 @@
-/* eslint-disable */
 import About from "@/components/sections/About";
 import Achievements from "@/components/sections/Achievements";
 import Testimonials from "@/components/sections/Testimonials";

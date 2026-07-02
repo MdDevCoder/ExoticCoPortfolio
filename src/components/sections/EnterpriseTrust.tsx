@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { Shield, Server, Code, Zap, RefreshCw, Handshake } from "lucide-react";
@@ -14,7 +13,7 @@ const trustFactors = [
 ];
 
 export default function EnterpriseTrust() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  
   const easePremium = [0.16, 1, 0.3, 1] as any // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (

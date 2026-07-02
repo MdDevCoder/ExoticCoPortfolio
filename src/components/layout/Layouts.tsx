@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 
 interface LayoutProps extends React.HTMLAttributes<HTMLDivElement> {

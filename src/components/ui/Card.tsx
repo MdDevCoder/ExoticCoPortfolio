@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 import { exoticTokens } from "@/lib/design/tokens";
 

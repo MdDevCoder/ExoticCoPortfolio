@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import Image from "next/image";
 
 export default function Hero() {
   // Custom easing for premium feel
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   const containerVariants = {
     hidden: { opacity: 0 },

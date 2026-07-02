@@ -33,8 +33,8 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: easePremium, delay: 2.5 }}
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-[#050608]/80 backdrop-blur-md border-b border-white/5 shadow-[0_10px_30px_rgba(0,0,0,0.5)] py-4" : "bg-transparent py-6"
+      className={`fixed left-0 right-0 top-0 z-50 transform-gpu transition-all duration-500 ${
+        scrolled ? "bg-[#050608]/80 backdrop-blur-2xl border-b border-white/5 shadow-[0_10px_30px_rgba(0,0,0,0.5)] py-4" : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 lg:px-12">
@@ -85,7 +85,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5, ease: easePremium }}
-            className="md:hidden absolute left-0 right-0 top-full bg-[#050608]/95 backdrop-blur-md border-b border-white/10 flex flex-col items-center justify-center gap-8 pt-10 pb-20"
+            className="md:hidden absolute left-0 right-0 top-full bg-[#050608]/95 backdrop-blur-3xl border-b border-white/10 flex flex-col items-center justify-center gap-8 pt-10 pb-20"
           >
             {links.map((link) => (
               <Link 

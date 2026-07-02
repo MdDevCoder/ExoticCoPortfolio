@@ -76,8 +76,8 @@ export default function FeaturedProjects() {
             <div className="relative w-full overflow-hidden p-10 lg:p-24 bg-gradient-to-br from-surface to-[#050B14]">
               <div className="absolute inset-0 bg-primary/5 mix-blend-overlay" />
               
-              <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
-                <div className="flex-1">
+              <div className="relative z-10 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10 lg:gap-16">
+                <div className="order-2 lg:order-1 flex-1">
                   <div className="mb-8 inline-flex items-center gap-3 rounded-full bg-primary/10 px-5 py-2 backdrop-blur-md border border-primary/20 shadow-[0_0_30px_rgba(45,140,255,0.2)]">
                     <span className="relative flex h-2.5 w-2.5">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -89,25 +89,27 @@ export default function FeaturedProjects() {
                   <p className="text-2xl lg:text-4xl font-light text-glow/90 leading-tight max-w-2xl">{cryptiqVerse.tagline}</p>
                 </div>
                 
-                {/* Brand Identity / Logo integration */}
-                <motion.div 
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  style={{ willChange: "transform", transform: "translateZ(0)" }}
-                  className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-[0_0_60px_rgba(45,140,255,0.4)] overflow-hidden mt-8 lg:mt-0"
-                >
-                   {/* Light reflection */}
-                   <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />
-                   {/* Soft blue outer glow (inner to the container) */}
-                   <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full z-0" />
-                   <Image 
-                    src="/assets/projects/cryptiqverse-logo.jpg" 
-                    alt="CryptiqVerse logo" 
-                    fill 
-                    sizes="(max-width: 1024px) 140px, 180px"
-                    className="object-cover p-3 rounded-full relative z-10 drop-shadow-[0_0_15px_rgba(45,140,255,0.5)]"
-                   />
-                </motion.div>
+                <div className="order-1 lg:order-2 shrink-0 flex justify-center lg:justify-end">
+                  {/* Brand Identity / Logo integration */}
+                  <motion.div 
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ willChange: "transform", transform: "translateZ(0)" }}
+                    className="relative flex items-center justify-center w-[100px] h-[100px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-[0_0_60px_rgba(45,140,255,0.4)] overflow-hidden"
+                  >
+                     {/* Light reflection */}
+                     <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />
+                     {/* Soft blue outer glow (inner to the container) */}
+                     <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full z-0" />
+                     <Image 
+                      src="/assets/projects/cryptiqverse-logo.jpg" 
+                      alt="CryptiqVerse logo" 
+                      fill 
+                      sizes="(max-width: 1024px) 140px, 180px"
+                      className="object-cover p-3 rounded-full relative z-10 drop-shadow-[0_0_15px_rgba(45,140,255,0.5)]"
+                     />
+                  </motion.div>
+                </div>
               </div>
             </div>
 
@@ -193,34 +195,44 @@ export default function FeaturedProjects() {
               transition={{ duration: 0.8, delay: eliteSkillHub.delay, ease: easePremium }}
               className="group relative overflow-hidden rounded-[2.5rem] bg-surface/40 border border-white/5 p-10 lg:p-16 transition-all duration-500 hover:bg-surface hover:border-purple-500/30 hover:shadow-[0_20px_60px_-15px_rgba(168,85,247,0.15)]"
             >
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12">
+                <div className="order-2 lg:order-1 flex-1">
                   <header className="mb-8 flex items-center justify-between border-b border-white/5 pb-6">
                     <span className="text-xs font-bold uppercase tracking-widest text-purple-400">{eliteSkillHub.type}</span>
                   </header>
                   <h3 className="mb-6 text-4xl lg:text-6xl font-bold text-white tracking-tighter transition-colors duration-300 group-hover:text-purple-400">
                     {eliteSkillHub.title}
                   </h3>
-                  <p className="mb-12 text-xl text-secondary-text font-light leading-relaxed">
+                  <p className="mb-12 text-xl text-secondary-text font-light leading-relaxed max-w-3xl">
                     {eliteSkillHub.description}
                   </p>
                   
-                  <footer className="flex flex-wrap gap-3 mb-10 lg:mb-0">
+                  <footer className="flex flex-wrap gap-3 mb-10 lg:mb-12">
                     {eliteSkillHub.tech.map(tech => (
                       <span key={tech} className="rounded-lg bg-black/40 px-4 py-2 text-sm font-medium text-white/70 border border-white/5 transition-colors group-hover:border-purple-500/20 group-hover:text-white">
                         {tech}
                       </span>
                     ))}
                   </footer>
+
+                  <a 
+                    href={eliteSkillHub.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex h-16 items-center justify-center gap-3 overflow-hidden rounded-full bg-white text-background px-10 font-bold shadow-[0_0_40px_rgba(255,255,255,0.2)] transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_60px_rgba(168,85,247,0.4)] hover:bg-purple-600 hover:text-white"
+                  >
+                    <span className="text-lg">Launch Live Demo</span>
+                    <ArrowUpRight size={22} />
+                  </a>
                 </div>
 
-                <div className="flex flex-col lg:items-end justify-center gap-10">
+                <div className="order-1 lg:order-2 shrink-0 flex justify-center lg:justify-end">
                   {/* Brand Identity / Logo integration */}
                   <motion.div 
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     style={{ willChange: "transform", transform: "translateZ(0)" }}
-                    className="relative flex items-center justify-center w-[120px] h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-[0_0_60px_rgba(168,85,247,0.4)] overflow-hidden"
+                    className="relative flex items-center justify-center w-[100px] h-[100px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px] rounded-full p-2 bg-white/[0.03] backdrop-blur-md border border-white/10 shadow-[0_0_60px_rgba(168,85,247,0.4)] overflow-hidden"
                   >
                      {/* Light reflection */}
                      <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent mix-blend-overlay rounded-full pointer-events-none z-20" />
@@ -234,16 +246,6 @@ export default function FeaturedProjects() {
                       className="object-contain p-3 rounded-full relative z-10 drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]"
                      />
                   </motion.div>
-
-                   <a 
-                    href={eliteSkillHub.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex h-16 items-center justify-center gap-3 overflow-hidden rounded-full bg-white text-background px-10 font-bold shadow-[0_0_40px_rgba(255,255,255,0.2)] transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_60px_rgba(168,85,247,0.4)] hover:bg-purple-600 hover:text-white"
-                  >
-                    <span className="text-lg">Launch Live Demo</span>
-                    <ArrowUpRight size={22} />
-                  </a>
                 </div>
               </div>
             </motion.article>

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { projectCategories, projects } from "@/data/projects";
 import Link from "next/link";
 import Image from "next/image";

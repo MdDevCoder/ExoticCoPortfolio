@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -16,7 +15,7 @@ export default function Loader() {
     return () => clearTimeout(timer);
   }, []);
 
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <AnimatePresence>

@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { Shield, Target, Zap, Globe2 } from "lucide-react";
@@ -12,7 +11,7 @@ const values = [
 ];
 
 export default function About() {
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <section id="about" className="relative bg-background pt-32 pb-40 overflow-hidden">
@@ -34,7 +33,7 @@ export default function About() {
                 Exotic Co. is an elite software engineering collective. We partner with visionaries, startups, to build the world&apos;s most sophisticated digital products that redefine industries.
               </p>
               <p>
-                Our philosophy is simple: uncompromising quality. Whether it's an AI-driven SaaS platform, a high-frequency trading bot, or a beautifully crafted marketing site, we engineer every pixel and byte with absolute perfection.
+                Our philosophy is simple: uncompromising quality. Whether it&apos;s an AI-driven SaaS platform, a high-frequency trading bot, or a beautifully crafted marketing site, we engineer every pixel and byte with absolute perfection.
               </p>
             </div>
             

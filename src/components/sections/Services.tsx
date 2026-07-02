@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { 
@@ -19,7 +18,7 @@ const services = [
 ];
 
 export default function Services() {
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <section id="services" className="relative bg-surface/30 pt-32 pb-40 border-y border-white/5">
@@ -58,7 +57,7 @@ export default function Services() {
   );
 }
 
-function ServiceCard({ service, index, ease }: { service: any; index: number; ease: any }) {
+function ServiceCard({ service, index, ease }: { service: { title: string; description: string; icon: React.ReactNode }; index: number; ease: [number, number, number, number] }) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 40 }}

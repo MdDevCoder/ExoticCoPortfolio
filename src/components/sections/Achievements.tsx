@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
@@ -29,7 +28,7 @@ export default function Achievements() {
   );
 }
 
-function Counter({ stat, index }: { stat: any; index: number }) {
+function Counter({ stat, index }: { stat: { label: string; value: number; suffix: string }; index: number }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [count, setCount] = useState(0);
@@ -51,7 +50,7 @@ function Counter({ stat, index }: { stat: any; index: number }) {
     }
   }, [isInView, stat.value]);
 
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <motion.div

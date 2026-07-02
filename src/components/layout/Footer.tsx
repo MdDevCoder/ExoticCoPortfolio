@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -12,7 +11,7 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const easePremium: any = [0.16, 1, 0.3, 1];
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <footer className="relative bg-[#020305] pt-24 pb-12 border-t border-white/5 overflow-hidden">
@@ -60,7 +59,7 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <h4 className="mb-6 font-semibold text-white tracking-wide">Initiate</h4>
-            <p className="mb-6 text-secondary-text text-sm font-light leading-relaxed">Ready to build something extraordinary? Let's talk architecture.</p>
+            <p className="mb-6 text-secondary-text text-sm font-light leading-relaxed">Ready to build something extraordinary? let&apos;s talk architecture.</p>
             <a href="mailto:exoticzack01@gmail.com" className="group inline-flex items-center gap-3 text-white transition-colors hover:text-primary">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 border border-white/10 transition-colors group-hover:bg-primary/20 group-hover:border-primary/50">
                 <Mail size={16} />

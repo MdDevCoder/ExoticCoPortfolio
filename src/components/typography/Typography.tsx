@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from "react";
 
 interface TypographyProps extends React.HTMLAttributes<HTMLElement> {

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { services } from "@/data/services";
 import Link from "next/link";
 import { ArrowRight, Code2 } from "lucide-react";

@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
@@ -23,8 +22,8 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const easePremium = [0.16, 1, 0.3, 1] as any // eslint-disable-line @typescript-eslint/no-explicit-any;
+  
+  const easePremium: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
   return (
     <section id="testimonials" className="relative bg-background pt-32 pb-40 border-t border-white/5">

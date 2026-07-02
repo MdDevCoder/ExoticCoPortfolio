@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Hero from "@/components/sections/Hero";
 import EnterpriseTrust from "@/components/sections/EnterpriseTrust";
 import About from "@/components/sections/About";

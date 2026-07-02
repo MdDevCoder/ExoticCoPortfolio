@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable */
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -19,7 +18,7 @@ export default function FloatingCTA() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  
   const easePremium = [0.16, 1, 0.3, 1] as any // eslint-disable-line @typescript-eslint/no-explicit-any
 
   return (
